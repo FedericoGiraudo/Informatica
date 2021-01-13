@@ -1,4 +1,4 @@
-public class Albero{
+class Albero{
   private float x;
   private float y;
   private float h;
@@ -13,7 +13,7 @@ public class Albero{
     this.w = w;
   }
   public void draw(){
-
+     
      fill(COLORE_TRONCO);
      rect(x-w/2+w/3,y-y/10+h/10,w/3,h/2);
      

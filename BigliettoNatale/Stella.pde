@@ -1,4 +1,4 @@
-public class Stella{
+class Stella{
   private float x;
   private float y;
   private float h;
@@ -21,10 +21,10 @@ public class Stella{
      triangle(x-w/2,y,x,y-h,x+w/2,y);
      triangle(x-w/2,y-y/3,x,y+h/3,x+w/2,y-y/3);
      
-     do{
+     if(x!=width){
      delay(30);
      x=x+2;
-     }while(x==640);
+     }
      
   }
   
