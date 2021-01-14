@@ -5,7 +5,6 @@ class Stella{
   private float w;
   
   public static final color COLORE_STELLA = #ffff00;
-
   
   Stella(float x, float y, float w, float h ){
     this.x = x;
@@ -13,6 +12,7 @@ class Stella{
     this.h = h;
     this.w = w;
   }
+  
   public void draw(){
 
      fill(COLORE_STELLA);
@@ -22,10 +22,10 @@ class Stella{
      triangle(x-w/2,y-y/3,x,y+h/3,x+w/2,y-y/3);
      
      if(x!=width){
-     delay(30);
-     x=x+2;
+       delay(30);
+       x=x+2;
      }
-     
+     else
+       x=0;
   }
-  
 }

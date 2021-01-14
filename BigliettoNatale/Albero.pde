@@ -3,6 +3,7 @@ class Albero{
   private float y;
   private float h;
   private float w;
+  
   public static final color COLORE_FOGLIE = #00ff00;
   public static final color COLORE_TRONCO = #964b00;
   
@@ -12,6 +13,7 @@ class Albero{
     this.h = h;
     this.w = w;
   }
+  
   public void draw(){
      
      fill(COLORE_TRONCO);
@@ -20,5 +22,5 @@ class Albero{
      fill(COLORE_FOGLIE);
      triangle(x-w/2, y, x, y-h, x+w/2, y);
   }
-  
+ 
 }
